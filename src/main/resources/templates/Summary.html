@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>E-Commerce Summary</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+	  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+      <script src="/js/summary.js"></script>
+      <style type="text/css">
+body{
+  	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+	background-color: #52051e14;
+}
+</style>
+    </head>
+    <body>  
+       <body onload="getselectedproduct()">
+	<div class="container">
+		<h3 align="center">Selected Product List</h3>
+		<div class="row col-md-7 table-responsive"style="margin-left: 250px;">
+			<table id="productTable" class="table table" >
+				<thead>
+					<tr>
+						<th>Id</th>
+						<th>Name</th>
+						<th></th>
+						<th>Price</th>
+					</tr>
+				</thead>
+				<tbody>
+				</tbody>
+			</table>
+		</div>
+		<!-- <div>
+		<table id="productTable1" class="table table">
+				<thead>
+					
+					<tr>
+						<th>Total Price(&#x20b9 INR):</th>
+						<th></th>
+						<th></th>
+						<th><p id="totalvalue"></p></th>
+					</tr>
+					<tr>
+						<th>Total Item:</th>
+						<th></th>
+						<th></th>
+						<th><p id="totalitem"></p></th>
+					</tr>
+				</thead>
+				<tbody>
+				</tbody>
+			</table>
+		 
+	</div> -->
+	
+		</div>
+		<div>
+		<div align="left" style="margin-left: 420px;"><label>Total Item :</label><span><label id="totalitem"></label></span></div>
+		<div align="right"style="margin-right: 438px;margin-top: -25px;"><label>Total Price(&#x20b9 INR) :</label><span><label id="totalvalue"></label></span></div>
+		</div>
+		<br>
+		<div align="center">
+		<button class="btn btn-primary" id="productcheckout" onclick="window.location.href='/dashboard'">Continue Shopping</button>
+		<button class="btn btn-primary" id="productcheckout">Payment</button>
+		</div>
+	<div class="col-sm-7" id="statusdiv1">
+	</div>
+	 
+</body>
+    </body>
+</html>

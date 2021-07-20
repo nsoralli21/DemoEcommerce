@@ -1,0 +1,62 @@
+<!DOCTYPE HTML>
+
+<html>
+<head>
+<title>E-Commerce Dashboard</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link rel="stylesheet"href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+<script src="/js/dashboard.js"></script>
+<script type="text/javascript">
+</script>
+<style type="text/css">
+body{
+  	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+	background-color: #52051e14;
+}
+</style>
+</head>
+
+<body onload="ajaxGet()">
+	<div class="container">
+	 <div>
+		<div align="left" style="margin-left: 500px;">
+	<!-- <button class="btn btn-primary" id="productcheckout" onclick="GetSelected()">Proceed to Checkout</button>--></div> 
+		<div align="right"style="margin-right: 150px;margin-top: 12px;">
+		<button class="btn btn-danger" onclick="window.location.href='/logout'">SIGN OUT</button></div>
+		</div>
+		<h3 align="center">Product List</h3>
+		<div class="row col-md-7 table-responsive" style="margin-left: 250px;">
+			<table id="productTable" class="table table-bordered table-hover" >
+				<thead>
+					<tr>
+						<th>Id</th>
+						<th>Name</th>
+						<th>Price</th>
+						<th></th>
+					</tr>
+				</thead>
+				<tbody>
+				</tbody>
+			</table>
+		</div>
+	</div>
+	<div style="margin-right: 100px;">
+	<span>
+	</span>
+                </div>
+                <div>
+		<div align="left" style="margin-left: 500px;">
+	<button class="btn btn-primary" id="productcheckout" onclick="GetSelected()">Proceed to Checkout</button></div>
+		<div align="right"style="margin-right: 470px;margin-top: -50px;">
+		<button class="btn btn-primary" onclick="selectallcheckbox()" >SELECT ALL</button></div>
+		</div>
+                <div class="col-sm-7" id="statusdiv1">
+	</div>
+</body>
+</html>
