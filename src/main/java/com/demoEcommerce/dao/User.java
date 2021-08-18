@@ -1,7 +1,7 @@
 package com.demoEcommerce.dao;
 
 public class User {
-//user dao class
+//user dao
 	private String username;
 	private String password;
 	
